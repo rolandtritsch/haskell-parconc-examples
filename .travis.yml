@@ -18,3 +18,4 @@ script:
   - travis_wait 60 stack exec chapter01-exe
   - travis_wait 60 stack exec chapter07fork-exe
   - travis_wait 60 echo -n -e "1\n5\nexit\n" | stack exec chapter07fork-exe
+  - travis_wait 60 stack exec chapter07mvars-exe
