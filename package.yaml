@@ -1,23 +1,15 @@
-name:                new-template
+name:                haskell-parcon-examples
 version:             0.1.0.0
-github:              "githubuser/new-template"
+github:              "rolandtritsch/haskell-parcon-examples"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+author:              "Roland Tritsch"
+maintainer:          "roland@tritsch.org"
+copyright:           "2018 Roland Tritsch"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/new-template#readme>
+description:         Please see the README on GitHub
 
 dependencies:
 - base >= 4.7 && < 5
@@ -26,23 +18,12 @@ library:
   source-dirs: src
 
 executables:
-  new-template-exe:
-    main:                Main.hs
+  chapter01-exe:
+    main:                Chapter01.hs
     source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - new-template
-
-tests:
-  new-template-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - new-template
+    - haskell-parcon-examples
