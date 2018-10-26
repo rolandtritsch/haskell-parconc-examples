@@ -1,6 +1,6 @@
-module Main where
+module Chapter01 where
 
 import Lib
 
 main :: IO ()
-main = someFunc
+main = hello

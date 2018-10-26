@@ -25,5 +25,17 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -main-is Chapter01
+    dependencies:
+    - haskell-parcon-examples
+
+  chapter07fork-exe:
+    main:                Chapter07Fork.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter07Fork
     dependencies:
     - haskell-parcon-examples
