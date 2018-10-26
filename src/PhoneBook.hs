@@ -29,8 +29,9 @@ new = do
 -- | insert/add an entry into the (given) phonebook
 insert :: PhoneBookState -> Name -> PhoneNumber -> IO ()
 insert (PhoneBookState m) name number = do
-  book <- takeMVar m
-  putMVar m (M.insert name number book)
+  let book' = M.insert name number book'
+  putMVar m book'
+  seq book' (return ())
 
 -- | lookup an entry from the phonebook
 lookup :: PhoneBookState -> Name -> IO (Maybe PhoneNumber)
