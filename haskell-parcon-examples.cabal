@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 196d43714953c669fa6e69fa3dac8b86f3f36a93ef0b14bd4728814110b36b7f
+-- hash: 37d235468b882af62194bd3db0c5e44bcb6e43062ab46f6998bedba67de085b9
 
 name:           haskell-parcon-examples
 version:        0.1.0.0
@@ -27,12 +27,14 @@ library
   exposed-modules:
       Lib
       Logger
+      PhoneBook
   other-modules:
       Paths_haskell_parcon_examples
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 executable chapter01-exe
@@ -41,6 +43,7 @@ executable chapter01-exe
       Chapter07Fork
       Chapter07Logger
       Chapter07MVars
+      Chapter07PhoneBook
       Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
@@ -57,6 +60,7 @@ executable chapter07fork-exe
       Chapter01
       Chapter07Logger
       Chapter07MVars
+      Chapter07PhoneBook
       Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
@@ -73,6 +77,7 @@ executable chapter07logger-exe
       Chapter01
       Chapter07Fork
       Chapter07MVars
+      Chapter07PhoneBook
       Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
@@ -89,11 +94,29 @@ executable chapter07mvars-exe
       Chapter01
       Chapter07Fork
       Chapter07Logger
+      Chapter07PhoneBook
       Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is Chapter07MVars
+  build-depends:
+      base >=4.7 && <5
+    , haskell-parcon-examples
+  default-language: Haskell2010
+
+executable chapter07phonebook-exe
+  main-is: Chapter07PhoneBook.hs
+  other-modules:
+      Chapter01
+      Chapter07Fork
+      Chapter07Logger
+      Chapter07MVars
+      Chapter07Reminders
+      Paths_haskell_parcon_examples
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is Chapter07PhoneBook
   build-depends:
       base >=4.7 && <5
     , haskell-parcon-examples
@@ -106,6 +129,7 @@ executable chapter07reminders-exe
       Chapter07Fork
       Chapter07Logger
       Chapter07MVars
+      Chapter07PhoneBook
       Paths_haskell_parcon_examples
   hs-source-dirs:
       app
