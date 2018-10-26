@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 83d79c5b652a0816273a1515cbad0b1956b8e80bde5ae4a012a29b73c852454e
+-- hash: 2d2a9d71b67654362299ce65ef105822fce0b6f822ec7aed524507b0db846622
 
 name:           haskell-parcon-examples
 version:        0.1.0.0
@@ -38,6 +38,7 @@ executable chapter01-exe
   main-is: Chapter01.hs
   other-modules:
       Chapter07Fork
+      Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
       app
@@ -51,10 +52,25 @@ executable chapter07fork-exe
   main-is: Chapter07Fork.hs
   other-modules:
       Chapter01
+      Chapter07Reminders
       Paths_haskell_parcon_examples
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is Chapter07Fork
+  build-depends:
+      base >=4.7 && <5
+    , haskell-parcon-examples
+  default-language: Haskell2010
+
+executable chapter07reminders-exe
+  main-is: Chapter07Reminders.hs
+  other-modules:
+      Chapter01
+      Chapter07Fork
+      Paths_haskell_parcon_examples
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -main-is Chapter07Reminders
   build-depends:
       base >=4.7 && <5
     , haskell-parcon-examples

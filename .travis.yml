@@ -16,3 +16,5 @@ before_install:
 script:
   - stack build
   - travis_wait 60 stack exec chapter01-exe
+  - travis_wait 60 stack exec chapter07fork-exe
+  - travis_wait 60 echo 5 | stack exec chapter07fork-exe
