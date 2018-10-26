@@ -12,9 +12,13 @@ import Text.Printf
 import Control.Monad
 
 main :: IO ()
-main = forever $ do
-  s <- getLine
-  forkIO $ setReminder s
+main = loop where
+  loop = do
+    s <- getLine
+    if s == "exit" then return ()
+    else do
+      forkIO $ setReminder s
+      loop
 
 setReminder :: String -> IO ()
 setReminder s  = do
