@@ -61,3 +61,14 @@ executables:
     - -main-is Chapter07MVars
     dependencies:
     - haskell-parcon-examples
+
+  chapter07logger-exe:
+    main:                Chapter07Logger.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter07Logger
+    dependencies:
+    - haskell-parcon-examples
