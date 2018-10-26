@@ -24,18 +24,18 @@ newtype PhoneBookState = PhoneBookState (MVar PhoneBook)
 new :: IO PhoneBookState
 new = do
   m <- newMVar M.empty
-  return (PhoneBookState m)
+  return $ PhoneBookState m
 
 -- | insert/add an entry into the (given) phonebook
 insert :: PhoneBookState -> Name -> PhoneNumber -> IO ()
 insert (PhoneBookState m) name number = do
   let book' = M.insert name number book'
   putMVar m book'
-  seq book' (return ())
+  seq book' $ return ()
 
 -- | lookup an entry from the phonebook
 lookup :: PhoneBookState -> Name -> IO (Maybe PhoneNumber)
 lookup (PhoneBookState m) name = do
   book <- takeMVar m
   putMVar m book
-  return (M.lookup name book)
+  return $ M.lookup name book
