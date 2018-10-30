@@ -91,13 +91,24 @@ executables:
     dependencies:
     - haskell-parconc-examples
 
-  chapter08geturls-exe:
-    main:                Chapter08GetURLs.hs
+  chapter08geturlstimed-exe:
+    main:                Chapter08GetURLsTimed.hs
     source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    - -main-is Chapter08GetURLs
+    - -main-is Chapter08GetURLsTimed
+    dependencies:
+    - haskell-parconc-examples
+
+  chapter08geturlsfirst-exe:
+    main:                Chapter08GetURLsFirst.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter08GetURLsFirst
     dependencies:
     - haskell-parconc-examples

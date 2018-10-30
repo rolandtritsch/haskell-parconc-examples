@@ -2,7 +2,7 @@
 Download webpages in parallel (and measure the time it takes to downlad them).
 -}
 
-module Chapter08GetURLs where
+module Chapter08GetURLsTimed where
 
 import Control.Concurrent.Async
 import System.TimeIt

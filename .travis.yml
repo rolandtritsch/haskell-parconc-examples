@@ -21,3 +21,5 @@ script:
   - travis_wait 60 stack exec chapter07mvars-exe
   - travis_wait 60 stack exec chapter07logger-exe
   - travis_wait 60 stack exec chapter07phonebook-exe
+  - travis_wait 60 stack exec chapter08geturlstimed-exe
+  - travis_wait 60 stack exec chapter08geturlsfirst-exe
