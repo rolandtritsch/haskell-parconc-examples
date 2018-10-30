@@ -34,7 +34,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter01
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter07fork-exe:
     main:                Chapter07Fork.hs
@@ -45,7 +45,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter07Fork
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter07reminders-exe:
     main:                Chapter07Reminders.hs
@@ -56,7 +56,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter07Reminders
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter07mvars-exe:
     main:                Chapter07MVars.hs
@@ -67,7 +67,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter07MVars
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter07logger-exe:
     main:                Chapter07Logger.hs
@@ -78,7 +78,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter07Logger
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter07phonebook-exe:
     main:                Chapter07PhoneBook.hs
@@ -89,7 +89,7 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter07PhoneBook
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
 
   chapter08geturls-exe:
     main:                Chapter08GetURLs.hs
@@ -100,4 +100,4 @@ executables:
     - -with-rtsopts=-N
     - -main-is Chapter08GetURLs
     dependencies:
-    - haskell-parcon-examples
+    - haskell-parconc-examples
