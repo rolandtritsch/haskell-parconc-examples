@@ -1,6 +1,6 @@
-name:                haskell-parcon-examples
+name:                haskell-parconc-examples
 version:             0.1.0.0
-github:              "rolandtritsch/haskell-parcon-examples"
+github:              "rolandtritsch/haskell-parconc-examples"
 license:             BSD3
 author:              "Roland Tritsch"
 maintainer:          "roland@tritsch.org"
