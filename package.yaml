@@ -18,6 +18,8 @@ dependencies:
 - async
 - HTTP
 - network-uri
+- stm
+- containers
 
 library:
   source-dirs: src
@@ -121,5 +123,16 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     - -main-is Chapter09CatchMask
+    dependencies:
+    - haskell-parconc-examples
+
+  chapter10windowman-exe:
+    main:                Chapter10WindowMan.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter10WindowMan
     dependencies:
     - haskell-parconc-examples
