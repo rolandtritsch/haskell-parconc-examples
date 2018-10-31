@@ -9,4 +9,4 @@ stack exec chapter07phonebook-exe
 stack exec chapter08geturlstimed-exe
 stack exec chapter08geturlsfirst-exe
 stack exec chapter09catchmask-exe ./README.md ./package.yaml ./stack.yaml
-stack exec chapter10-windowman-exe
+stack exec chapter10windowman-exe
