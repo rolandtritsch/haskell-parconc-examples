@@ -112,3 +112,14 @@ executables:
     - -main-is Chapter08GetURLsFirst
     dependencies:
     - haskell-parconc-examples
+
+  chapter09catchmask-exe:
+    main:                Chapter09CatchMask.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter09CatchMask
+    dependencies:
+    - haskell-parconc-examples

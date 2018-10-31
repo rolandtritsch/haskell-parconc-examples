@@ -13,13 +13,6 @@ before_install:
   - curl -sSL https://get.haskellstack.org/ | sh
   - stack build --dry-run
 
-script:
+script
   - stack build
-  - travis_wait 60 stack exec chapter01-exe
-  - travis_wait 60 stack exec chapter07fork-exe
-  - travis_wait 60 echo -n -e "1\n5\nexit\n" | stack exec chapter07reminders-exe
-  - travis_wait 60 stack exec chapter07mvars-exe
-  - travis_wait 60 stack exec chapter07logger-exe
-  - travis_wait 60 stack exec chapter07phonebook-exe
-  - travis_wait 60 stack exec chapter08geturlstimed-exe
-  - travis_wait 60 stack exec chapter08geturlsfirst-exe
+  - . ./bin/run
