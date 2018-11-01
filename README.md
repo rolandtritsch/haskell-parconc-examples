@@ -8,3 +8,5 @@ To make this work you need to ...
 * install stack
 * run `stack build`
 * run `stack exec chapter01` (or any other of the mains in the app directory)
+
+Note: You can also build/run this with [eta](https://eta-lang.org) (e.g. `etlas build && etlas run chapter01-exe`).
