@@ -20,6 +20,7 @@ dependencies:
 - network-uri
 - stm
 - containers
+- network
 
 library:
   source-dirs: src
@@ -134,5 +135,16 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     - -main-is Chapter10WindowMan
+    dependencies:
+    - haskell-parconc-examples
+
+  chapter12server-exe:
+    main:                Chapter12Server.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter12Server
     dependencies:
     - haskell-parconc-examples
