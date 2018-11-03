@@ -159,3 +159,14 @@ executables:
     - -main-is Chapter12ServerSTM
     dependencies:
     - haskell-parconc-examples
+
+  chapter12chat-exe:
+    main:                Chapter12Chat.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter12Chat
+    dependencies:
+    - haskell-parconc-examples

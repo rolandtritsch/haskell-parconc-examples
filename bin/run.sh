@@ -10,5 +10,6 @@ stack exec chapter08geturlstimed-exe
 stack exec chapter08geturlsfirst-exe
 stack exec chapter09catchmask-exe ./README.md ./package.yaml ./stack.yaml
 stack exec chapter10windowman-exe
-stack exec chapter12server-exe & sleep 2 && echo -e -n "22\n123\nquit\n" | nc localhost 44444
-stack exec chapter12serverstm-exe & sleep 2 && echo -e -n "22\n*4\n22\nquit\n" | nc localhost 44444
+stack exec chapter12server-exe & sleep 2 && echo -e -n "22\n123\nquit\n" | nc localhost 44444 && sleep 2
+stack exec chapter12serverstm-exe & sleep 2 && echo -e -n "22\n*4\n22\nquit\n\n" | nc localhost 44444 && sleep 2
+stack exec chapter12chat-exe & sleep 2 && echo -e -n "roland\nTEST\n/quit\n" | nc localhost 44444 && sleep 2
