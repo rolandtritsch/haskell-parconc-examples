@@ -148,3 +148,14 @@ executables:
     - -main-is Chapter12Server
     dependencies:
     - haskell-parconc-examples
+
+  chapter12serverstm-exe:
+    main:                Chapter12ServerSTM.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter12ServerSTM
+    dependencies:
+    - haskell-parconc-examples
