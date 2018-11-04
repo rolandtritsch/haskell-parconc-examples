@@ -183,3 +183,14 @@ executables:
     - -main-is Chapter13FindSeq
     dependencies:
     - haskell-parconc-examples
+
+  chapter13findpar-exe:
+    main:                Chapter13FindPar.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is Chapter13FindPar
+    dependencies:
+    - haskell-parconc-examples
