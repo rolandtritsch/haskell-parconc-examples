@@ -13,3 +13,7 @@ stack exec chapter10windowman-exe
 stack exec chapter12server-exe & sleep 2 && echo -e -n "22\n123\nquit\n" | nc localhost 44444 && sleep 2
 stack exec chapter12serverstm-exe & sleep 2 && echo -e -n "22\n*4\n22\nquit\n\n" | nc localhost 44444 && sleep 2
 stack exec chapter12chat-exe & sleep 2 && echo -e -n "roland\nTEST\n/quit\n" | nc localhost 44444 && sleep 2
+time stack exec chapter13findseq-exe DoesNotExist.txt ~ +RTS -N1
+time stack exec chapter13findseq-exe DoesNotExist.txt ~ +RTS -N1
+time stack exec chapter13findpar-exe DoesNotExist.txt ~ +RTS -N1
+time stack exec chapter13findpar-exe DoesNotExist.txt ~ +RTS -N4
