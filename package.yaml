@@ -194,3 +194,15 @@ executables:
     - -main-is Chapter13FindPar
     dependencies:
     - haskell-parconc-examples
+
+  chapter15trace-exe:
+    main:                Chapter15Trace.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -debug
+    - -with-rtsopts=-N
+    - -main-is Chapter15Trace
+    dependencies:
+    - haskell-parconc-examples
